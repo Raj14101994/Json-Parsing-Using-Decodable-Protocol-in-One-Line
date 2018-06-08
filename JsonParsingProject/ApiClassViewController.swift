@@ -75,6 +75,7 @@ class ApiClassViewController: UIViewController {
         guard let data = data else { return }
             
         //Mark:- Getting data by JSonDecoder
+            
      do{
          let model = try JSONDecoder().decode(Model.self, from: data)
             print(model.name,model.address.street,model.company.name)
